@@ -28,22 +28,6 @@ const Home = (props) => {
         setListQuestions(filterListQuestions)
     }
 
-    const handleDeleteQuestion = async (id) => {
-        let isConfirm = confirm("Do you confirm deletion of this question?");
-        console.log(isConfirm)
-        if (!isConfirm) return;
-        const result = await API({
-            url: `/questions/${id}`,
-            method: 'delete'
-        });
-        if (result && result.status && result.status == 200) {
-            alert("success");
-            setIsRefresh(!isRefresh)
-        } else {
-            alert("failed")
-        }
-    }
-
     return (
         <>
             <Sidebar/>
@@ -71,8 +55,8 @@ const Home = (props) => {
                                         <td>{e.answers[e.answersCorrectIndex] || ''}</td>
                                         <td>
                                             <a href={`/detail-questions/${e._id}`} class="btn btn-green"><i class="fas fa-info-circle"></i> Detail</a>
-                                            <a href={`/questions/${e._id}`} class="btn btn-blue"><i class="far fa-edit"></i> Edit</a>
-                                            <a onClick={() => handleDeleteQuestion(e._id)} class="btn btn-orange"><i class="far fa-trash-alt"></i> Delete</a>
+                                            <a href={`#`} class="btn btn-blue"><i class="far fa-edit"></i> Edit</a>
+                                            <a href={`#`} class="btn btn-orange"><i class="far fa-trash-alt"></i> Delete</a>
                                         </td>
                                     </tr>
                                 ))

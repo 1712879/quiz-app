@@ -11,7 +11,7 @@ const Sidebar = (props) => {
 
                 <ul>
                     <li><a href="/"><i class="far fa-question-circle"></i> All questions</a></li>
-                    <li><a href="/create/question"><i class="far fa-plus"></i> New question</a></li>
+                    <li><a href="/"><i class="far fa-plus"></i> New question</a></li>
                 </ul>
             </aside>
         </>
