@@ -1,0 +1,58 @@
+{
+	"info": {
+		"_postman_id": "e6be473e-797d-43e6-acae-094cf258edc4",
+		"name": "Quiz Postman",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Submit & finish attempt",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"618f8a6ef4d73939d85ea633\": \"2\",\r\n    \"618f8a6ef4d73939d85ea638\": \"3\",\r\n    \"618f8a6df4d73939d85ea631\": \"1\",\r\n    \"618f8a6ef4d73939d85ea632\": \"3\",\r\n    \"618f8a6ef4d73939d85ea639\": \"0\",\r\n    \"618f8a6ef4d73939d85ea636\": \"3\",\r\n    \"618f8a6ef4d73939d85ea63b\": \"0\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/attempts/618f8b0dccf456309869805f/submit",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"attempts",
+						"618f8b0dccf456309869805f",
+						"submit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Start a new attempt",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/attempts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"attempts"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

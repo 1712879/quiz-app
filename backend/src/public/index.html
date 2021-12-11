@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>All questions | Quiz app</title>
+
+  <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+
+  <link href="https://fonts.googleapis.com/css?family=Pangolin:400,700|Proxima+Nova" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+  
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <aside>
+        <h3>WPR</h3>
+        <header>
+            <h2>HTML Quiz</h2>
+        </header>
+        
+        <ul>
+            <li><a class="active" href="index.html"><i class="far fa-question-circle"></i> All questions</a></li>
+            <li><a href="add.html"><i class="far fa-plus"></i> New question</a></li>
+        </ul>
+    </aside>
+    <main>
+        <div class="container">
+            <h1>All questions</h1>
+
+            <div id="search">
+                <input type="text" placeholder="Search..." />
+            </div>
+
+            <table>
+                <tr>
+                    <th>#</th>
+                    <th>Question</th>
+                    <th>Answer</th>
+                    <th width="210">Actions</th>
+                </tr>
+    
+                <tr>
+                    <td>1</td>
+                    <td>What does HTML stand for?</td>
+                    <td>Hyper Text Markup Language</td>
+                    <td>
+                        <a href="edit.html" class="btn btn-blue"><i class="far fa-edit"></i> Edit</a>
+                        <a href="#" class="btn btn-orange"><i class="far fa-trash-alt"></i> Delete</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>What does HTML stand for?</td>
+                    <td>Hyper Text Markup Language</td>
+                    <td>
+                        <a href="edit.html" class="btn btn-blue"><i class="far fa-edit"></i> Edit</a>
+                        <a href="#" class="btn btn-orange"><i class="far fa-trash-alt"></i> Delete</a>
+                    </td>
+                </tr>
+    
+            </table>
+        </div>
+    </main>
+    
+</body>
+</html>
