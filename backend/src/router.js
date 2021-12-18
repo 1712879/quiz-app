@@ -18,7 +18,7 @@ router.post("/attempts", async (req, res) => {
         let attemptSaved = await attemptModel.save();
         let attempt = await schemas.attemptsSchema.findById(attemptSaved._id).populate({
             path: "questions",
-            select: "-answersCorrectIndex"
+            select: "-correctAnswer"
         }).lean();
         return res.status(201).json(attempt)
     } catch (error) {
@@ -55,7 +55,7 @@ router.post("/attempts/:id/submit", async (req, res) => {
         let correctAnswers = attempt.questions.reduce((total, cur) => {
             return {
                 ...total,
-                [cur._id]: cur.answersCorrectIndex
+                [cur._id]: cur.correctAnswer
             }
         }, {})
         let score = 0;
@@ -78,7 +78,7 @@ router.post("/attempts/:id/submit", async (req, res) => {
         await schemas.attemptsSchema.findByIdAndUpdate(req.params.id, updateValue);
         return res.status(200).json({
             ...attemptAsJson,
-            questions: attempt.questions.map(e => { delete e.answersCorrectIndex; return e}),
+            questions: attempt.questions.map(e => { delete e.correctAnswer; return e}),
             completed: true,
             score,
             scoreText,

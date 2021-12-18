@@ -68,7 +68,7 @@ const Home = (props) => {
                                     <tr key={e._id}>
                                         <td>{idx + 1}</td>
                                         <td>{e.text}</td>
-                                        <td>{e.answers[e.answersCorrectIndex] || ''}</td>
+                                        <td>{e.answers[e.correctAnswer] || ''}</td>
                                         <td>
                                             <a href={`/detail-questions/${e._id}`} class="btn btn-green"><i class="fas fa-info-circle"></i> Detail</a>
                                             <a href={`/questions/${e._id}`} class="btn btn-blue"><i class="far fa-edit"></i> Edit</a>

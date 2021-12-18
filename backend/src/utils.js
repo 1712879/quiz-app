@@ -9,7 +9,7 @@ async function insertSamplesQuestion(samples){
             return {
                 answers: sample.answers,
                 text: sample.text,
-                answersCorrectIndex: sample.correctAnswer['$numberInt']
+                correctAnswer: sample.correctAnswer['$numberInt']
             }
         })
         let results = await schemas.questionsSchema.insertMany(sampleValues, {lean: true});

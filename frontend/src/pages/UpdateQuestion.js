@@ -21,7 +21,7 @@ const UpdateQuestion = (props) => {
             let question = results.data;
             if(!question) return;
             setText(question.text);
-            setAnswersCorrectIndex(question.answersCorrectIndex)
+            setAnswersCorrectIndex(question.correctAnswer)
             setAnswers(question.answers)
         })()
     }, [id]);
@@ -53,7 +53,7 @@ const UpdateQuestion = (props) => {
         let body = {
             text,
             answers,
-            answersCorrectIndex
+            correctAnswer:answersCorrectIndex
         }
         console.log(body)
         const results = await API({

@@ -2,8 +2,11 @@ import React, { useEffect, useState } from 'react';
 import Sidebar from 'src/components/Sidebar/Sidebar';
 import '../styles/style.css';
 import API from 'src/api';
-
+import {
+    useHistory
+} from "react-router-dom";
 const CreateQuestion = (props) => {
+    const history = useHistory();
     const [text, setText] = useState('');
     const [answersCorrectIndex, setAnswersCorrectIndex] = useState(-1);
     let [answers, setAnswers] = useState([]);
@@ -36,7 +39,7 @@ const CreateQuestion = (props) => {
         let body = {
             text,
             answers,
-            answersCorrectIndex
+            correctAnswer:answersCorrectIndex
         }
         console.log(body)
         const results = await API({
@@ -46,6 +49,7 @@ const CreateQuestion = (props) => {
         })
         if (results && results.status && results.status == 200) {
             alert("success")
+            return history.push("/");
         } else {
             alert("failed")
         }

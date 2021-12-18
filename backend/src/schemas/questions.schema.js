@@ -4,7 +4,7 @@ const questionsSchema = new mongoose.Schema(
     {
         text: String,
         answers: [String],
-        answersCorrectIndex: Number,
+        correctAnswer: Number,
 
     },
     { collection: "questions" }

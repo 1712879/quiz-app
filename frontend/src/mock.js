@@ -8,7 +8,7 @@ module.exports = [
             '1232',
             '1233',
         ],
-        answersCorrectIndex:1
+        correctAnswer:1
     },
     {
         _id: 2,
@@ -19,6 +19,6 @@ module.exports = [
             '1232',
             '1233',
         ],
-        answersCorrectIndex: 1
+        correctAnswer: 1
     }
 ]

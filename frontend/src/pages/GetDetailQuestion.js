@@ -35,7 +35,7 @@ const GetQuestionDetail = (props) => {
                                         <div class="answer">
                                             <input type="text" name="answers" value={e} disabled/>
                                             <div>
-                                                <input name="correctAnswer" type="radio" disabled id="answer0" checked={idx === question.answersCorrectIndex} /> <label for="answer0">correct</label>
+                                                <input name="correctAnswer" type="radio" disabled id="answer0" checked={idx === question.correctAnswer} /> <label for="answer0">correct</label>
                                             </div>
                                         </div>
                                     ))

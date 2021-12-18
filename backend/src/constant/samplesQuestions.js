@@ -6,7 +6,7 @@ module.exports.samplesQuestions = [
             "<a href=\"url\" new>"
         ],
         "text": "How can you open a link in a new tab/browser window?",
-        "answersCorrectIndex": 0
+        "correctAnswer": 0
     },
     {
         "answers": [
@@ -16,7 +16,7 @@ module.exports.samplesQuestions = [
             "The World Wide Web Consortium"
         ],
         "text": "Who is making the Web standards?"
-        ,"answersCorrectIndex": 3
+        ,"correctAnswer": 3
     },
     {
         "answers": [
@@ -26,7 +26,7 @@ module.exports.samplesQuestions = [
             " <table><head><tfoot>"
         ],
         "text": "Which of these elements are all <table> elements?"
-        ,"answersCorrectIndex": 0
+        ,"correctAnswer": 0
     },
     {
         "answers": [
@@ -36,7 +36,7 @@ module.exports.samplesQuestions = [
             "<list>"
         ],
         "text": "How can you make a numbered list?"
-        ,"answersCorrectIndex": 2
+        ,"correctAnswer": 2
     },
     {
         "answers": [
@@ -46,7 +46,7 @@ module.exports.samplesQuestions = [
             "<"
         ],
         "text": "Which character is used to indicate an end tag?"
-        ,"answersCorrectIndex": 0
+        ,"correctAnswer": 0
     },
     {
         "answers": [
@@ -55,7 +55,7 @@ module.exports.samplesQuestions = [
             "<body bg=\"yellow\">"
         ],
         "text": "What is the correct HTML for adding a background color?"
-        ,"answersCorrectIndex": 0
+        ,"correctAnswer": 0
     },
     {
         "answers": [
@@ -65,7 +65,7 @@ module.exports.samplesQuestions = [
             "<a href=\"http://www.w3schools.com\">W3Schools</a>"
         ],
         "text": "What is the correct HTML for creating a hyperlink?"
-        ,"answersCorrectIndex": 3
+        ,"correctAnswer": 3
     },
     {
         "answers": [
@@ -75,7 +75,7 @@ module.exports.samplesQuestions = [
             "<ul>"
         ],
         "text": "How can you make a bulleted list?"
-        ,"answersCorrectIndex": 3
+        ,"correctAnswer": 3
     },
     {
         "answers": [
@@ -84,7 +84,7 @@ module.exports.samplesQuestions = [
             "Home Tool Markup Language"
         ],
         "text": "What does HTML stand for?"
-        ,"answersCorrectIndex": 0
+        ,"correctAnswer": 0
     },
     {
         "answers": [
@@ -94,7 +94,7 @@ module.exports.samplesQuestions = [
             "<h6>"
         ],
         "text": "Choose the correct HTML element for the largest heading:",
-        "answersCorrectIndex": 2
+        "correctAnswer": 2
     },
     {
         "answers": [
@@ -104,7 +104,7 @@ module.exports.samplesQuestions = [
             "<input type=\"check\">"
         ],
         "text": "What is the correct HTML for making a checkbox?",
-        "answersCorrectIndex": 2
+        "correctAnswer": 2
     },
     {
         "answers": [
@@ -113,7 +113,7 @@ module.exports.samplesQuestions = [
             "<br>"
         ],
         "text": "What is the correct HTML element for inserting a line break?",
-        "answersCorrectIndex": 2
+        "correctAnswer": 2
     },
     {
         "answers": [
@@ -123,7 +123,7 @@ module.exports.samplesQuestions = [
             "<b>"
         ],
         "text": "Choose the correct HTML element to define important text",
-        "answersCorrectIndex": 3
+        "correctAnswer": 3
     },
     {
         "answers": [
@@ -131,6 +131,6 @@ module.exports.samplesQuestions = [
             " False"
         ],
         "text": "Inline elements are normally displayed without starting a new line.",
-        "answersCorrectIndex": 0
+        "correctAnswer": 0
     }
 ]
